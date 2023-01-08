@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Italic.woff2") format("woff2"), url("../fonts/Cardo-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Bold.woff2") format("woff2"), url("../fonts/Cardo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cardo";
+  src: url("../fonts/Cardo-Regular.woff2") format("woff2"), url("../fonts/Cardo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.bg_imge {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 99%;
+}
+
+.overlay {
+  background-color: rgba(42, 45, 65, 0.888);
+}
+.overlay header .nav-link {
+  color: #fff;
+}
+
+.banner .container .textbox {
+  width: 920px;
+  max-width: 100%;
+  padding: 155px 0px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.banner .container .textbox h1 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  font-size: 65px;
+}
+.banner .container .textbox p {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 45px;
+  text-align: center;
+}
+.banner .container .textbox .btn {
+  width: 200px;
+  max-width: 100%;
+  background-color: #e84545;
+  margin-top: 75px;
+  border-radius: 0%;
+  padding: 10px;
+}
+.banner .container .textbox .btn a {
+  color: #fff;
+}
+
+.servies_section {
+  padding: 120px 0px;
+}
+.servies_section .icon i {
+  color: #e84646;
+  font-size: 40px;
+}
+.servies_section .tex_tbox h5 {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.servies_section .tex_tbox p {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+.gallerysaction .flex_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallerysaction .flex_container .image {
+  height: 100%;
+  position: relative;
+}
+.gallerysaction .flex_container .image img {
+  width: 100%;
+  height: 100%;
+}
+.gallerysaction .flex_container .image .gallaryoverlayer {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background-color: rgba(165, 42, 42, 0.534);
+  text-align: center;
+  padding: 10px;
+  top: 0px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.gallerysaction .flex_container .image .gallaryoverlayer .texbox {
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+
+.gallerysaction .image:hover .gallaryoverlayer {
+  display: flex;
+}
+
+.imgbox {
+  width: 100%;
+}
+
+.teamsection {
+  padding: 100px 0px;
+}
+.teamsection .teamsection_box h5 {
+  font-size: 22px;
+  padding-top: 30px;
+}
+.teamsection .teamsection_box h6 {
+  font-size: 14px;
+  color: #e84646;
+}
+.teamsection .teamsection_box p {
+  font-size: 13px;
+}
+.teamsection .teamsection_box .social_icon ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.teamsection .teamsection_box .social_icon ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #cccccc;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.teamsection .teamsection_box .social_icon ul li i {
+  color: #cccccc;
+}
+
+.clientsection .image {
+  width: 100%;
+  height: 100%;
+}
+.clientsection .image img {
+  max-width: 100%;
+  height: 100%;
+}
+.clientsection .textbox {
+  font-family: "Cardo", serif;
+  background-color: #53354a;
+  height: 100%;
+  padding: 110px 80px 0px 85px;
+}
+.clientsection .textbox .text_items {
+  color: #fff;
+}
+.clientsection .textbox .text_items h2 {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 36px;
+}
+.clientsection .textbox .text_items p {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  margin-bottom: 60px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadsection {
+  text-align: center;
+  padding: 100px 0px;
+}
+.downloadsection h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-style: light;
+}
+.downloadsection p {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-style: Bold;
+}
+.downloadsection .button {
+  margin-top: 40px;
+  color: #fff;
+  background-color: #e84545;
+  padding: 15px 85px;
+  border-radius: 0%;
+}
+.downloadsection .button a {
+  color: #fff;
+}
+
+.footersection {
+  background-color: #3a3e64;
+  padding: 70px 0px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.footersection h4 {
+  text-align: center;
+}
+.footersection p {
+  text-align: center;
+}
+.footersection .social_icon {
+  display: flex;
+  margin: auto;
+}
+.footersection .social_icon ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.footersection .social_icon ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #fff;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.footersection .social_icon ul li i {
+  color: #fff;
+}
+
+footer {
+  background-color: #313454;
+  color: #808080;
+  text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .maindiv #header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .imgbox {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .imgbox {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .imgbox {
+    width: 33.333%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .imgbox {
+    width: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
